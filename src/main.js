@@ -12,6 +12,15 @@ scroll  (
     
 )
 
+animate (
+    ".staggeranimation div",
+    { opacity: [0, 1] },
+    { 
+        delay: stagger(0.5, { start: 1 })
+    }
+)
+s
+
 
 inView (".overlaytrigger", () => { 
     animate(
@@ -58,6 +67,12 @@ inView (".overlaytrigger", () => {
 
 }
 )
+document.querySelectorAll(".parallaxcontainer").forEach(( parallaxcontainer ) => {
+    const elementderskalparallaxes = parallaxcontainer.querySelector("p");
+    scroll(animate(elementderskalparallaxes, { y: [50, 500] }), {
+      target: elementderskalparallaxes
+    });
+  });
 
 
 
