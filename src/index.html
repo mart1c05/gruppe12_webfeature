@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pierre Falcke</title>
   </head>
-  <body class="bg-[#24424B]">
+  <body class="scroll-smooth bg-[#24424B]">
     <div class="fixed -z-30 flex h-full w-full justify-center">
       <img class="w-auto object-cover" src="line.png" alt="" />
     </div>
@@ -116,22 +116,148 @@
 
     <div class="flex justify-center">
       <div>
-        <img class="zoom exit" src="camerawpierre.png" alt="" />
+        <img
+          class="zoom exit max-w-screen z-30 max-h-screen"
+          src="camerawpierre.png"
+          alt=""
+        />
       </div>
+      <div class="overlaytrigger"></div>
       <div class="picture absolute">
-        <img class="-z-10 max-w-full" src="pierre.jpeg" alt="" />
+        <img class="max-w-screen -z-10 max-h-screen" src="pierre.jpeg" alt="" />
       </div>
       <div class="overlay absolute h-screen w-screen opacity-0">
         <img class="block" src="white.png" alt="" />
       </div>
     </div>
-    <div class="overlaytrigger"></div>
 
-    <div id="scroll" class="flex overflow-x-auto overscroll-y-auto">
-      <img src="pierre.jpeg" alt="" />
-      <img src="pierre.jpeg" alt="" />
-      <img src="pierre.jpeg" alt="" />
-    </div>
+    <section id="horisontalscrollsection" class="relative h-[500vh]">
+      <div class="fixed -z-30 flex h-full w-full justify-center">
+        <img class="w-auto object-cover" src="Line-kopi.png" alt="" />
+      </div>
+      <ul id="horisontalliste" class="sticky top-0 flex list-none">
+        <li
+          class="flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
+        >
+          <div class="m-20 flex flex-col gap-20">
+            <h2 class="text-8xl text-white">En skillevej</h2>
+            <p class="w-96 text-white">
+              Han søgte inspiration i analog fotografering, i Lomo-bevægelsen,
+              Glitch art og polaroid fotografering, og begyndte stille og roligt
+              at skabe sig en ny stil - en stil med fokus på det uperfekte, og
+              hvor der er et uforudsigeligt element i det at tage billeder.
+            </p>
+          </div>
+        </li>
+        <li
+          class="flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
+        >
+          <div>
+            <img src="" alt="" />
+            <img src="" alt="" />
+          </div>
+        </li>
+        <li
+          class="flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
+        >
+          <p class="w-96 text-white">
+            Pierre tog det endda så vidt at han ikke kun droppede at tage
+            stock-fotos. Han fjernede også alle stock-fotos fra de tjenester,
+            han solgte sine fotos hos. Han gik fra at være en god
+            forretningsdrivende til at blive en vaskeægte boheme-type på
+            rekordtid.
+          </p>
+        </li>
+        <li
+          class="flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
+        >
+          <div>
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+          </div>
+        </li>
+        <li
+          class="flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
+        >
+          <div class="m-20 flex flex-col gap-20">
+            <h2 class="text-7xl text-white">Analog Fotografering</h2>
+            <p class="w-96 text-white">
+              Fotografering med gode, gammeldags filmruller. Analog
+              fotografering stiger for tiden i popularitet, specielt blandt
+              unge, og prisen på filmruller og vintage-kameraer skyder i vejret.
+              Mange fotografer synes at film-fotografering er mere ægte har mere
+              “sjæl.”
+            </p>
+            <div>
+              <p class="w-96 font-bold italic text-white">
+                Interesseret i analog fotografi?
+              </p>
+              <button>Læs med her</button>
+            </div>
+          </div>
+        </li>
+
+        <li
+          class="flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
+        >
+          <div>
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+          </div>
+        </li>
+        <li
+          class="flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
+        >
+          <h2 class="text-7xl text-white">Lomografi</h2>
+          <p class="w-96 text-white">
+            Et lomografi er egentlig bare et fotografi skudt uden videre
+            omtanke, og med noget foto-udstyr af ret alternativ kvalitet.
+            Lomografier skydes ofte på gode, gammeldags filmruller, men kan også
+            skyde digitalt.
+          </p>
+          <div>
+            <p class="w-96 font-bold italic text-white">
+              Interesseret i lomografi?
+            </p>
+            <button>Læs med her</button>
+          </div>
+        </li>
+        <li
+          class="flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
+        >
+          <img src="" alt="" />
+        </li>
+        <li
+          class="flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
+        >
+          <h2 class="text-7xl text-white">Glitch Art</h2>
+          <p class="w-96 text-white">
+            Når der sker en teknisk fejl i et medie/en kommunikationskanal
+            kaldes det en glitch. Glitch art går ud på at dyrke fejlene for at
+            skabe kunst. En meget typisk glitch er små analoge eller digitale
+            fejl i farvegengivelsen af billeder.
+          </p>
+          <div>
+            <p class="w-96 font-bold italic text-white">
+              Interesseret i Glitch Art?
+            </p>
+            <button>Læs med her</button>
+          </div>
+        </li>
+        <li
+          class="flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
+        >
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+        </li>
+      </ul>
+    </section>
+    <section></section>
 
     <script type="module" src="./main.js"></script>
   </body>

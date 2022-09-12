@@ -4,7 +4,7 @@ import { animate, stagger, inView, scroll, timeline } from "motion"
 scroll  (
     animate(
         ".zoom", {
-            scale: [0, 2], 
+            scale: [0.5, 1], 
             
             
         }
@@ -66,28 +66,16 @@ inView (".overlaytrigger", () => {
 
 }
 )
-document.querySelectorAll(".parallaxcontainer").forEach(( parallaxcontainer ) => {
-    const elementderskalparallaxes = parallaxcontainer.querySelector("p", "h1");
-    scroll(animate(elementderskalparallaxes, { y: [50, 500] }), {
-      target: elementderskalparallaxes
-    });
-  });
+
+const items = document.querySelectorAll("#horisontalliste li");
+scroll(
+   animate("#horisontalliste", {
+     transform: ["none", `translateX(-${items.length - 1}00vw)`]
+   }),
+   { target: document.querySelector("#horisontalscrollsection") }
+ ); 
 
 
-
-
-
-
-
-
-// const scrollContainer = document.querySelector("#scroll");
-
-// scrollContainer.addEventListener("wheel", (evt) => {
-//     evt.preventDefault();
-//     scrollContainer.scrollLeft += evt.deltaY;
-// });
-
-// https://alvarotrigo.com/blog/scroll-horizontally-with-mouse-wheel-vanilla-java/
 
 
 
