@@ -123,7 +123,7 @@
         />
       </div>
       <div class="overlaytrigger"></div>
-      <div class="picture absolute">
+      <div class="picture exit absolute">
         <img class="max-w-screen -z-10 max-h-screen" src="pierre.jpeg" alt="" />
       </div>
       <div class="overlay absolute h-screen w-screen opacity-0">
@@ -131,13 +131,13 @@
       </div>
     </div>
 
-    <section id="horisontalscrollsection" class="relative h-[500vh]">
-      <div class="fixed -z-30 flex h-full w-full justify-center">
-        <img class="w-auto object-cover" src="Line-kopi.png" alt="" />
-      </div>
+    <section
+      id="horisontalscrollsection"
+      class="relative h-[500vh] bg-[url('line_horizontal.jpg')] bg-contain bg-fixed"
+    >
       <ul id="horisontalliste" class="sticky top-0 flex list-none">
         <li
-          class="flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
+          class="flex h-[100vh] w-[42vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
         >
           <div class="m-20 flex flex-col gap-20">
             <h2 class="text-8xl text-white">En skillevej</h2>
@@ -150,15 +150,15 @@
           </div>
         </li>
         <li
-          class="flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
+          class="flex h-[100vh] w-[42vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
         >
-          <div>
-            <img src="" alt="" />
-            <img src="" alt="" />
+          <div class="up_down w-64 flex-col">
+            <img class="m-3" src="pierre-2.webp" alt="" />
+            <img class="m-3" src="filmfoto.webp" alt="" />
           </div>
         </li>
         <li
-          class="flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
+          class="flex h-[100vh] w-[42vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
         >
           <p class="w-96 text-white">
             Pierre tog det endda så vidt at han ikke kun droppede at tage
@@ -169,18 +169,18 @@
           </p>
         </li>
         <li
-          class="flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
+          class="flex h-[100vh] w-[42vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
         >
-          <div>
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
+          <div class="up_down w-64 translate-y-36 flex-col">
+            <img class="m-3" src="lomo-diana-f.webp" alt="" />
+            <img class="m-3" src="mcd.webp" alt="" />
+            <img class="m-3" src="lomo-smena.webp" alt="" />
           </div>
         </li>
         <li
-          class="flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
+          class="flex h-[100vh] w-[42vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
         >
-          <div class="m-20 flex flex-col gap-20">
+          <div class="m-20 flex snap-center flex-col gap-20">
             <h2 class="text-7xl text-white">Analog Fotografering</h2>
             <p class="w-96 text-white">
               Fotografering med gode, gammeldags filmruller. Analog
@@ -199,65 +199,132 @@
         </li>
 
         <li
-          class="flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
+          class="flex h-[100vh] w-[42vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
         >
-          <div>
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
+          <div class="grid w-96 snap-center grid-cols-2 gap-5">
+            <img src="lomo-smena2.webp" alt="" />
+            <img src="lomo-smena-17.webp" alt="" />
+            <img src="light-leaks.webp" alt="" />
+            <img src="lomo.webp" alt="" />
           </div>
         </li>
         <li
-          class="flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
+          class="flex h-[100vh] w-[42vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
         >
-          <h2 class="text-7xl text-white">Lomografi</h2>
-          <p class="w-96 text-white">
-            Et lomografi er egentlig bare et fotografi skudt uden videre
-            omtanke, og med noget foto-udstyr af ret alternativ kvalitet.
-            Lomografier skydes ofte på gode, gammeldags filmruller, men kan også
-            skyde digitalt.
-          </p>
-          <div>
-            <p class="w-96 font-bold italic text-white">
-              Interesseret i lomografi?
+          <div class="m-20 flex snap-center flex-col gap-20">
+            <h2 class="text-7xl text-white">Lomografi</h2>
+            <p class="w-96 text-white">
+              Et lomografi er egentlig bare et fotografi skudt uden videre
+              omtanke, og med noget foto-udstyr af ret alternativ kvalitet.
+              Lomografier skydes ofte på gode, gammeldags filmruller, men kan
+              også skyde digitalt.
             </p>
-            <button>Læs med her</button>
+            <div>
+              <p class="w-96 font-bold italic text-white">
+                Interesseret i lomografi?
+              </p>
+              <button>Læs med her</button>
+            </div>
           </div>
         </li>
         <li
-          class="flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
+          class="flex h-[100vh] w-[42vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
         >
-          <img src="" alt="" />
+          <img
+            class="h-screen w-screen snap-center"
+            src="tynd-film.webp"
+            alt=""
+          />
         </li>
         <li
-          class="flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
+          class="ml-20 flex h-[100vh] w-[42vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
         >
-          <h2 class="text-7xl text-white">Glitch Art</h2>
-          <p class="w-96 text-white">
-            Når der sker en teknisk fejl i et medie/en kommunikationskanal
-            kaldes det en glitch. Glitch art går ud på at dyrke fejlene for at
-            skabe kunst. En meget typisk glitch er små analoge eller digitale
-            fejl i farvegengivelsen af billeder.
-          </p>
-          <div>
-            <p class="w-96 font-bold italic text-white">
-              Interesseret i Glitch Art?
+          <div class="m-20 flex snap-center flex-col gap-20">
+            <h2 class="text-7xl text-white">Glitch Art</h2>
+            <p class="w-96 text-white">
+              Når der sker en teknisk fejl i et medie/en kommunikationskanal
+              kaldes det en glitch. Glitch art går ud på at dyrke fejlene for at
+              skabe kunst. En meget typisk glitch er små analoge eller digitale
+              fejl i farvegengivelsen af billeder.
             </p>
-            <button>Læs med her</button>
+            <div>
+              <p class="w-96 font-bold italic text-white">
+                Interesseret i Glitch Art?
+              </p>
+              <button>Læs med her</button>
+            </div>
           </div>
         </li>
         <li
-          class="flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
+          class="flex h-[100vh] w-[42vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
         >
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+          <div class="grid w-96 snap-center grid-cols-2 gap-5">
+            <img src="glitch1.webp" alt="" />
+            <img src="glitch2.webp" alt="" />
+            <img src="glitch3.webp" alt="" />
+            <img src="glitch4.webp" alt="" />
+          </div>
         </li>
       </ul>
     </section>
-    <section></section>
+    <div class="sticky -z-40 bg-[url('over-out-ilm.webp')] bg-contain">
+      <div class="z-20 grid grid-cols-2">
+        <div class="col-span-2 opacity-70">
+          <img src="begyndelse.png" alt="" />
+        </div>
+        <div class="col-start-2 mx-20 my-10 w-96">
+          <p>
+            Pierre er glad for sin beslutning. Indkomsten er lavere nu, men han
+            har stadig lidt penge på kontoen, og studerer nu kunstfotografering
+            på fotoskolen Fatamorgana. Han glæder sig over hver dags
+            kunstneriske eksperimenter, og er for første gang i sit liv rigtig
+            stolt af sit arbejde.
+          </p>
+        </div>
+
+        <div class="col-start-1 my-48 mx-20 w-96">
+          <p>
+            Som Pierre selv udtrykker det:
+            <br />
+            <strong class="italic"
+              >“Det interessante ligger i fejlen. Et foto med masser af fejl er
+              interessant. Jeg eksperimenterer med udstyr og teknik, og skaber
+              nye visuelle udtryk. Det uperfekte er perfekt.”</strong
+            >
+          </p>
+        </div>
+        <div class="col-span-2">
+          <p class="m-auto w-96">
+            Karrieren begynder også så småt også at gå den rette vej: Pierre er
+            begyndt at sælge fotokunst på nettet, og har udgivet sin første
+            foto-bog med titlen “Lidt i fem,” som er en fotografisk odyssé om at
+            slæbe en brandert hjem i de tidlige morgentimer.
+          </p>
+        </div>
+        <div class="col-span-2">
+          <p class="m-auto w-96">
+            I forbindelse med udgivelsen af bogen, har han en udstilling på vej
+            i det Kongelige Biblioteks fotoudstilling.
+          </p>
+        </div>
+        <div class="col-span-2">
+          <p class="m-auto w-96">Interesseret i Pierre Falckes Bog?</p>
+          <div class="m-auto w-96">
+            <button class="m-auto w-96"><a href="">Find den her</a></button>
+          </div>
+        </div>
+
+        <div
+          class="col-span-2 grid h-[170vh] w-[100vw] bg-[url('pierre_yellow.png')] bg-cover bg-no-repeat"
+        >
+          <p class="absolute font-bold text-white">
+            “Nu kan jeg leve livet igen. Jeg føler mig frisk. Jeg føler mig fri.
+            Jeg føler mig genfødt.”
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
 
     <script type="module" src="./main.js"></script>
   </body>

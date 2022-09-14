@@ -1,16 +1,8 @@
 import "./style.css";
 import { animate, stagger, inView, scroll, timeline } from "motion"
 
-scroll  (
-    animate(
-        ".zoom", {
-            scale: [0.5, 1], 
-            
-            
-        }
-    ),
-    
-)
+
+
 
 animate (
     ".staggeranimation div",
@@ -29,7 +21,7 @@ inView (".overlaytrigger", () => {
             opacity: [0, 1, 0],
         }, 
         {
-            duration: 2,
+            duration: 0.5,
             
         },
 
@@ -45,8 +37,8 @@ inView (".overlaytrigger", () => {
 
         },
         {
-            duration: 1.5,
-            delay: 3
+            duration: 0.5,
+            delay: 1.5
         }
     ),
     animate(
@@ -56,10 +48,17 @@ inView (".overlaytrigger", () => {
         },
         {
             duration: 0.5,
-            delay: 4
+            delay: 0.5
         }
 
-    )
+    ),
+    animate(
+        ".up_down",{
+        translateY: [-500, 500, -500]}, {
+        duration: 10,
+        repeat: Infinity
+    })
+
   
      
     
@@ -67,13 +66,27 @@ inView (".overlaytrigger", () => {
 }
 )
 
+
+
 const items = document.querySelectorAll("#horisontalliste li");
 scroll(
    animate("#horisontalliste", {
      transform: ["none", `translateX(-${items.length - 1}00vw)`]
    }),
-   { target: document.querySelector("#horisontalscrollsection") }
- ); 
+   { target: document.querySelector("#horisontalscrollsection") },
+   animate(
+        ".zoom", {
+            scale: [0.5, 1], 
+            
+            
+        },{
+            duration: 0.2
+        }
+        
+    )
+  
+
+ );
 
 
 
