@@ -98,15 +98,17 @@ scroll(
   )
   scroll(
     animate(".scrollzoomimg", { 
-        scale: [0.1, 1.5, 2],
-        translateX: [0],
-        translateY: [0, 1000],
-        translateZ: [100],
+        scale: [0.5, 1.5],
+        translateY: [0, 5000],
+        
+
+        
         
         opacity: [0.5, 1]    
       }),
       { 
         target: document.querySelector(".scrollzoom"),
+        
         
      })
   scroll (animate(".progress-bar", { scaleX: [0, 1] }))
